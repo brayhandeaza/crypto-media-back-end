@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "up": "docker compose up",
+        "down": "docker rmi -f $(docker images -aq)"
+    }
+}
