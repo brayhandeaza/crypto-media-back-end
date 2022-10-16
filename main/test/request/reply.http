@@ -1,0 +1,28 @@
+### Get All Coins
+GET http://localhost:8000/reply/2/reply-of-reply HTTP/1.1
+
+
+### Get All Coins
+GET http://localhost:8000/reply/comment/31 HTTP/1.1
+
+
+### Post Single Reply
+POST http://localhost:8000/reply/reply-of-reply HTTP/1.1
+Content-Type:  application/json
+
+{
+    "replyId": 6,
+    "userId": 1,
+    "body": "Klk mi locogrehtrhrytjey jytejtyjty",
+    "imageUrl": null
+}
+
+###
+POST http://localhost:8000/likes/reply/5 HTTP/1.1
+Content-Type:  application/json
+
+{
+    "userId": 1
+}
+
+

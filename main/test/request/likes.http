@@ -1,0 +1,59 @@
+### Get All likes
+GET http://localhost:8000/likes HTTP/1.1
+### Get Single likes
+GET http://localhost:8000/likes/reply/1 HTTP/1.1
+
+### Get Single likes
+GET http://localhost:8000/likes/1 HTTP/1.1
+
+### Get Single likes
+GET http://localhost:8000/likes/post/3 HTTP/1.1
+
+### Get Single likes
+GET http://localhost:8000/likes/comment/3 HTTP/1.1
+
+### Get Single likes
+GET http://localhost:8000/likes/post/count/3 HTTP/1.1
+
+### Post Single Comment likes
+POST http://localhost:8000/likes/comment HTTP/1.1
+Content-Type:  application/json
+
+{
+    "commentId": 1,
+    "userId": 1
+}
+
+### Update Single likes
+PATCH http://localhost:8000/likes/5 HTTP/1.1
+Content-Type:  application/json
+
+{
+    "body": "The International Monetary Fund's latest report concedes that it's 'impractical' to convert rubles into crypto on a large scale. The earliest moment in the history of the Universe where our current physics still works is 10⁻⁴³ sec after the Big Bang.",
+    "userId": 1,
+    "imageUrl": "https://drasticcode.com/media/Reactstrap-vs-react-bootstrap.jpg"
+}
+
+### Delete Single Comment likes
+POST http://localhost:8000/likes/comment/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+### Post Single Comment likes
+POST http://localhost:8000/likes/reply/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "userId": 2
+}
+
+### Delete Single likes
+POST http://localhost:8000/likes/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "userId": 1
+}
+

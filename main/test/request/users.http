@@ -1,0 +1,38 @@
+### Get All Users
+GET http://localhost:8000/users HTTP/1.1
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZXhwIjo5OTA1NTg1MzcwMCwiaWF0IjoxNjUwOTMwODk1fQ.2TQ-uRG94IqpDXhY0pWLRJThhus7T4K9Kfjp4sCB6XQ"
+
+
+### Get Single User
+GET http://localhost:8000/users/1 HTTP/1.1
+
+### Get Single User by uuid
+GET http://localhost:8000/users/f/f8p21L1GSbTz2qq7g0sBQNVCI HTTP/1.1
+
+### Get All Users With Filter
+GET http://localhost:8000/users/search?search=nul HTTP/1.1
+
+### Post Single Coins
+POST http://localhost:8000/users HTTP/1.1
+Authorization: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiZXhwIjo5OTA1NTg1MzcwMCwiaWF0IjoxNjUwOTMwODk1fQ.2TQ-uRG94IqpDXhY0pWLRJThhus7T4K9Kfjp4sCB6XQ"
+Content-Type:  application/json
+
+{
+    "firstName": "brayhan",
+    "lastName": "de aza",
+    "username": "brayhandeaza",
+    "uuid": "0x627201cE0F95355B7D94a6B3931B26FF08871AC5",
+    "dob": "Mon Jul 02 2007 00:00:00 GMT-0400 (Eastern Daylight Time)",
+    "image": "https://res.cloudinary.com/dbsswqtg9/image/upload/v1658696730/images/images_cig2yx.png"
+}
+### Post User Login
+POST http://localhost:8000/login HTTP/1.1
+Content-Type:  application/json
+
+
+{
+    "uuid": "ZbKaZQOvFYxO9OCji1nw7wzf1"
+}
+###
+DELETE http://localhost:8000/users/1/following/2 HTTP/1.1
+

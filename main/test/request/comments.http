@@ -1,0 +1,37 @@
+### Get All comments
+GET http://localhost:8000/comments/get-all HTTP/1.1
+
+### Get All comments
+GET http://localhost:8000/comments HTTP/1.1
+### Get All comments
+GET http://localhost:8000/comments/count/12 HTTP/1.1
+
+### Get Single comments
+GET http://localhost:8000/comments/28 HTTP/1.1
+
+
+### Get Single comments
+GET http://localhost:8000/comments/post/1 HTTP/1.1
+
+### Post Single comments
+POST http://localhost:8000/comments HTTP/1.1
+Content-Type:  application/json
+
+{
+    "postId": 19,
+    "userId": 2,
+    "body": "Klk mi loco",
+    "imageUrl": null
+}
+
+### Update Single comments
+PATCH http://localhost:8000/comments/3 HTTP/1.1
+Content-Type:  application/json
+
+{
+    "hidden": false
+}
+
+### Delete Single comments
+DELETE  http://localhost:8000/comments/33 HTTP/1.1
+

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "taxis-330114",
+  "private_key_id": "c161e9c60366a4193ae435a1e1c1b90cee355a97",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDV4Lzvmgd5ujoI\nSOjw/nmKvgDnqTpXdCpVICWjbRHnbNJ6Ari2GIQscksxlTjPrAHPK3IGuBibNTVs\nwb8xfIvGAQqp6U2NWB9RgvS2jhM9fxRJP4vex5i4WEkx/kshzviFq9e4akuOMbI4\nfXjZqa3MbCGQ7hD2Ggs3phj1V8XY2ED0cqQIMwQtF1+7YN5y0sFxHI35VC7uM2RZ\n36fjlR2efOz5Y4La/gyX5eaiZkWkG9GRBruKz8rFe6teRZuAlGPGteegHHfA+S4J\nikosAgGp6u7G+OT7IkVPotAsLE2fSTcgK+mFjIh+sDp6Y4jEjrMc8suX8F9ffyPm\nV39A7cqZAgMBAAECggEAARVzKsJhLkpM1buNLvdWCpW03tQY8HYmP5mZCI/m/7Lf\nCnLEDe9kc7y0zwiVFkTfNxYUELCfmhMvzCkbdMtPULvy+m0UNp+FZv7oikwAmBiV\nzL64yb1IjKAJkiNE9DlOluUmSuAQ589K6Ks7/T9f92fRlx0vRi37hcOD8XH+55Cn\nJrpWXTvjPOy6+5J2FW9TzwZHN2VHDsbwQt2knNR9NvbEbbIeVjYiW99SZv7OHDGw\nv0SqEn0pkV106Dqb+ScHB/jAFK9XNizKfGmDrheZ8uf9zMb9bYLy2DuLlf0CS+N0\n4n/XhWfyxndoAa3foonORtPHGLV9SAC5hZ5wRbhB8QKBgQD33bRP7LXsVYt9mHMR\nBEmZJt+P2Jn9iXs9FGgn2k+f95jgFFfFMZpVU1uqXaMIgrKQszlLQf5a82wWWLX5\nV+481C3kWz48D/kUZzHyrw0YljRy7bo7ikvZtEkfCyayFpUmzSKb4nriFR8jodTy\nQSfSGJUwXxiqT4At53egAxeXEQKBgQDc5YC/3ZU/Nvmpsd65vLfMnlLGxTmBmHSW\njeetPOTiiAnJn3jFVzrT3AC5pxG4iGDO+4cBsq8RhORSbJjjcqlfVqeI4YJgmEx+\nlqoGRemVZqBNSGvNbHqgsv/75dbDBe72hhoxXPHBVGOIddRgTMfnTmPwZApzyrBj\nobH+UV/LCQKBgGrCr5uNVX6KCh76vvUhZ6HzwG9w2EMAKHjShVpFCe7Y8pvxpyxk\nhRkjYmQrGMHdqZPx3kewESKTnoaxhw/y88Z3jZzCQDgWmS5UlIr3Iyjn6YdnJcPn\neWw33xbj8rLaTzv7N2D1WABxIIx0dAg0UDaKKBhBnZodzBP5kuj07ABBAoGBAMM5\n7rUjn+ETtEl+00qyeHrWPnBAJJfd5sScu/IGzH9NHeFdGL7IXkyZtuZdurKtjWnB\nMUuV4VYJbkVOhz0VvI1vJ3g5XiIC2DBU9gW/SjbpUamb5PLT+fkG2miFdG4+Uzj7\nwjB4ZY2pCKK1CLLniRFr3bW6pOY7b/NOF+Kdhp0JAoGBANZsFR7ycWC2bMp22UyS\n/bVrOVQ6RLMIEXYHBe/SRVJD45rxM1bVIekradav3gfLLO/qwgfNB1dl/UB3+UBy\nnsW+dT/qX2NzXjRvBTtLulaGcyRYC5PL1McR/V1j5qzKgKTu3bczfgnKYKnolD/D\nnv8dY6Hp33c+eDHpGaGBo4D4\n-----END PRIVATE KEY-----\n",
+  "client_email": "brayhan-de-aza@taxis-330114.iam.gserviceaccount.com",
+  "client_id": "106088273121903482420",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/brayhan-de-aza%40taxis-330114.iam.gserviceaccount.com"
+}

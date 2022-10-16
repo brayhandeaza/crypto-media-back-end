@@ -1,0 +1,40 @@
+### Get All Coins
+GET http://localhost:8000/coins HTTP/1.1
+
+### Get All Coins With Filter
+GET http://localhost:8000/coins/search?search=et HTTP/1.1
+
+### Get Single Coins
+GET http://localhost:8000/coins/1 HTTP/1.1
+### Get Single Coins
+
+GET http://localhost:8000/coins/our-token HTTP/1.1
+
+### Post Single Coins
+POST http://localhost:8000/coins HTTP/1.1
+Content-Type:  application/json
+
+{
+    "name": "ethereum",
+    "type": "coin",
+    "symbol": "ETH",
+    "explorer": "https://etherscan.io",
+    "imageUrl": "https://www.pngitem.com/pimgs/m/124-1245793_ethereum-eth-icon-ethereum-png-transparent-png.png",
+    "address": "none"
+}
+
+### Update Single Coins
+PATCH http://localhost:8000/coins/5 HTTP/1.1
+Content-Type:  application/json
+
+{
+    "name": "ethereum",
+    "type": "coin",
+    "symbol": "eth",
+    "explorer": "https://etherscan.io",
+    "imageUrl": "https://www.pngitem.com/pimgs/m/124-1245793_ethereum-eth-icon-ethereum-png-transparent-png.png",
+    "address": "none"
+}
+
+### Delete Single Coins
+DELETE http://localhost:8000/coins/3 HTTP/1.1
