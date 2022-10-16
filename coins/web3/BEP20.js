@@ -7,8 +7,8 @@ class BEP20 {
         this.exchangeAddress = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73'
         this.ERC20ABI = ERC20ABI
         this.exchangeABI = PancakeswapABI
-        this.baseAddress = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
-        this.usdAddress = '0xe9e7cea3dedca5984780bafc599bd69add087d56';
+        this.baseAddress = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c'
+        this.usdAddress = '0xe9e7cea3dedca5984780bafc599bd69add087d56'
         this.exchangeContract = new this.web3.eth.Contract(this.exchangeABI, this.exchangeAddress);
     }
 
