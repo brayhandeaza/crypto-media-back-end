@@ -9,6 +9,10 @@ const router = express.Router()
 router.get("/", async (req, res) => {
     await Coins.find().sort({ "_id": -1 }).limit(1).then((data) => {
         res.json(data)
+    }).catch((err) => {
+        res.json({
+            err: err.toString()
+        }).status(400)
     })
 })
 

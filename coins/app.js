@@ -22,9 +22,17 @@ const io = new Server(server, {
 })
 
 // Connect to Database
-mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true }).then(() => {
-    console.log('Database Connected successfully')
-})
+mongoose.connect(
+    process.env.MONGODB_URL,
+    {
+        user: process.env.MONGO_USERNAME,
+        pass: process.env.MONGO_PASSWORD,
+        dbName: process.env.DB_NAME,
+        useNewUrlParser: true
+    }).then(() => {
+        console.log('Database Connected successfully')
+        
+    }).catch(err => console.log('Database Error', err))
 
 // Watching Database Changes
 // binance.watch(io, 5)
@@ -34,6 +42,12 @@ mongoose.connect(process.env.MONGODB_URL, { useNewUrlParser: true }).then(() => 
 app.use(bodyParser.json())
 app.use("/coins", require("./routes/coins"))
 
+app.get("/", (req, res) => {
+    res.json({
+        status: 200,
+        message: "brica-mongo-coins-api"
+    })
+})
 
 // Socket Connection
 io.on('connection', (socket) => {

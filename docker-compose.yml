@@ -1,42 +1,58 @@
 version: '3'
 services:
+  # main server
   main:
     container_name: main-server
     build: ./main
     depends_on:
-      - db
+      - postgres
     ports:
       - 8000:8000
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
       POSTGRES_DB: brica-main-development
-      POSTGRES_HOST: db
-     
+      POSTGRES_HOST: postgres
+    
+  # coin server
   coins:
     container_name: coins-server
     build: ./coins
+    depends_on:
+      - mongo
     ports:
       - 8001:8001
+    environment:
+      MONGODB_URL: mongodb://mongo/27017
+      DB_NAME: my_db
 
+# notifications server
   notifications:
     container_name: notifications-server
     build: ./notifications
     ports:
       - 8002:8002
 
-  db:
-    container_name: db
+# postgres server
+  postgres:
+    container_name: postgres
     image: postgres
     restart: always
     environment:
       POSTGRES_PASSWORD: postgres
       POSTGRES_USER: postgres
       POSTGRES_DB: brica-main-development
-      POSTGRES_HOST: db
-    
-volumes: 
-  pgdata: {}
+      POSTGRES_HOST: postgres
 
+  # mongodb server
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_USERNAME: root
+      MONGO_PASSWORD: root
+    volumes:
+      - mongo_db:/data/db
 
-
+volumes:
+  mongo_db: {}
