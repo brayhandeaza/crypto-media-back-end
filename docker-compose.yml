@@ -1,6 +1,6 @@
 version: '3'
 services:
-  # main server
+# main server
   main:
     container_name: main-server
     build: ./main
@@ -14,7 +14,7 @@ services:
       POSTGRES_DB: brica-main-development
       POSTGRES_HOST: postgres
     
-  # coin server
+# coin server
   coins:
     container_name: coins-server
     build: ./coins
@@ -44,7 +44,7 @@ services:
       POSTGRES_DB: brica-main-development
       POSTGRES_HOST: postgres
 
-  # mongodb server
+# mongodb server
   mongo:
     image: mongo
     restart: always

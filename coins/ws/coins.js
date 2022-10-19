@@ -7,7 +7,7 @@ const topCoins = (socket) => {
 }
 
 const bricaToken = (socket) => {
-    Coins.findOne({ symbol: "SUNEKU" }).then(async (coin) => {
+    Coins.findOne({ symbol: "SENEKU" }).then(async (coin) => {
         socket.emit("get-brica-coin", coin)
     })
 }
@@ -18,7 +18,7 @@ const watchCoins = (io) => {
             io.emit("tops-coins-limite-five", coins)
         })
 
-        Coins.findOne({ symbol: "SUNEKU" }).then(async (coin) => {
+        Coins.findOne({ symbol: "SENEKU" }).then(async (coin) => {
             io.emit("get-brica-coin", coin)
         })
     })
